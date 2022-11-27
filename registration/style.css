@@ -1,0 +1,130 @@
+* {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	background-color: #e0e0e0;
+	/* background: url("https://res.cloudinary.com/mide358/image/upload/v1568715997/Background-img2_hc8lnn.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top; */
+}
+
+.container {
+	margin-top: 50px;
+}
+
+ .datas {
+	background: #e0e0e0;
+	border-radius: 10px;
+	box-shadow: 7px 7px 10px #828282, -7px -7px 10px #fff;
+	margin-inline: 25px;
+}
+
+.datas h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-weight: 900;
+
+}
+
+.register-form {
+	margin-top: 25px;
+	padding: 30px;
+}
+
+.logo {
+	margin-left: 2vw;
+	padding-top: 20px;
+	color: #A625D3;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.form-group .form-control {
+	border-radius: 1em;
+	/* border: 1.5px solid #A625D3; */
+	margin-top: 10px;
+	font-size: 16px;
+	background: #e0e0e0;
+	box-shadow: inset 2px 2px 3px #828282, inset -2px -2px 3px #fff;
+	padding-left: 17px;
+	height: 45px;
+
+
+}
+
+.form-group .btn-default {
+	border-radius: 2em;
+	background: #7cb5ff;
+	/* box-shadow: 3px 3px 5px #505050, -3px -3px 5px #000; */
+	width: 25vw;
+	border: none;
+	font-weight: 600;
+	color: #fff;
+	padding: 5px;
+	display: block;
+	margin: 30px auto 10px auto;
+	box-shadow: 0 7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
+
+}
+
+.form-group .btn-default:hover {
+	/* box-shadow: 0 8px 6px -6px ; */
+	background: #5189d3;
+	color: #fff;
+
+	/* scale: 1.1%; */
+	/* color: rgb(199, 199, 199); */
+	transition: all 0.2s ease;
+}
+
+.col-sm-6 p {
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.col-sm-6 p a {
+	color: blue;
+	font-weight: bold;
+}
+
+#other {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#other p {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#other a {
+	margin-top: 20px;
+	margin-left: 4px;
+	color: #7cb5ff;
+	text-decoration: none;
+}
+
+
+@media (min-width: 769px) {
+	#other p {
+		margin-left: 7vw;
+	}
+}
+
+@media (min-width: 788px) {
+	#other p {
+		margin-right: 5vw;
+	}
+}
+
+@media (min-width: 999px) {
+	#other p {
+		margin-right: -5vw;
+	}
+}

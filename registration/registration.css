@@ -1,0 +1,111 @@
+/* * {
+    margin: 0px
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal; */
+    /* background-image: url("Background-img2.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover
+}
+
+.logo {
+    margin-top: 35px;
+    margin-left: 35px;
+    text-transform: uppercase;
+    color: rgb(230, 0, 230);
+    font-size: 20px
+}
+
+.main {
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+.main .header {
+    margin-left: 85px
+}
+
+.header p {
+    margin-top: 5px;
+    margin-left: 55px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    font-size: 15px
+}
+
+.form-div {
+    margin-top: 100px
+}
+
+.form-div input {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid rgb(230, 0, 230);
+    width: 230px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px
+}
+
+.form-div .long-width {
+    width: 518px
+}
+
+.paddin {
+    margin-left: 40px;
+}
+
+.form-div .submit-btn {
+    margin-top: 25px;
+    margin-left: 110px;
+    width: 290px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid rgb(230, 0, 230);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: rgb(230, 0, 230);
+}
+
+.submit-btn {
+    cursor: pointer;
+}
+
+.info-div {
+    margin-top: 20px;
+    margin-left: 110px
+}
+
+a {
+    color: rgb(230, 0, 230)
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    margin-bottom: 15px;
+    width: 250px;
+    padding: 12px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .main, .info-div, .header, .form-div {
+      width: 100%; The width is 100%, when the viewport is 800px or smaller
+    }
+  }
+
+@media only screen and (max-width:500px) {
+    For mobile phones:
+    .main, .info-div, .header, .form-div {
+      width: 100%;
+    }
+  } */
