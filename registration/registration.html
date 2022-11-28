@@ -26,10 +26,13 @@
     <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6 datas">
-        <h1>SIGNUP</h1>
+        <h1>REGISTER</h1>
 
         <div class=" register-form">
-
+          <div class="who">
+            <div class="member" id="student">STUDENT</div>
+            <div class="member clicked" id="faculty">FACULTY</div>
+          </div>
           <form id="myForm" class="form-group" method="POST" action="">
             <input type="text" id="firstName" name="fName" class="form-control" placeholder="Full name" minlength="4"
               pattern="[A-Za-z]+" required>
@@ -63,7 +66,7 @@
               required>
 
             <input type="password" id="verifyPassword" name="password2" class="form-control"
-              placeholder="Verify Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               title="please enter same password as above" onchange="checkPassword();" required>
 
             <button class="btn btn-default" value="submit" id="submit" onchange="checkPassword();">Register</button>

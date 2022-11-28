@@ -9,22 +9,28 @@
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
     background-color: #e0e0e0;
+    min-width: 320px;
 }
 
 
 form {
     text-align: center;
-    margin-top: 15%;
-
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-/* .form-container{
+.form-container {
     background: #e0e0e0;
-	border-radius: 10px;
-	box-shadow: 7px 7px 10px #828282, -7px -7px 10px #fff;
-	margin: 25px;
-    
-} */
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px #828282, -7px -7px 10px #fff;
+    margin: 25px;
+    padding: 30px;
+    max-width: 500px;
+    min-width: 0px;
+    align-items: center;
+
+}
 
 input {
     /* border: 2px solid #A625D3; */
@@ -33,24 +39,29 @@ input {
     /* border-radius: 20px; */
     font-weight: bold;
     width: 370px;
+    /* min-width: 200px; */
     height: 23px;
     background-color: white;
-
+    border: none;
 
 }
 
 
 .form-control {
-	border-radius: 1em;
-	/* border: 1.5px solid #A625D3; */
-	/* margin-top: 10px; */
-	/* font-size: 16px; */
-	background: #e0e0e0;
-	box-shadow: inset 2px 2px 3px #828282, inset -2px -2px 3px #fff;
-	padding-left: 17px;
-	/* height: 45px; */
+    border-radius: 1em;
+    /* border: 1.5px solid #A625D3; */
+    /* margin-top: 10px; */
+    /* font-size: 16px; */
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 3px #828282, inset -2px -2px 3px #fff;
+    padding-left: 17px;
+    /* height: 45px; */
 
 
+}
+
+.heading{
+    margin-bottom: 30px;
 }
 
 .button {
@@ -58,13 +69,31 @@ input {
     color: #fff;
     border-radius: 2em;
     /* border-color:#A625D3; */
-    width: 400px;
+    width: 150px;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bold;
     cursor: pointer;
+    border: none;
     box-shadow: 0 7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
+}
+
+.register {
+    display: inline;
+    padding-inline: 30px;
+    /* width: 1100px; */
+}
+.reg-div{
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.forgot {
+    color: #000000;
 }
 
 .other-details a {
@@ -120,5 +149,28 @@ img {
         padding-bottom: 40px;
         margin-top: -15%;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    input{
+        width: 250px;
+    }
+    .register{
+        display: block;
+        margin-top: 15px;
+        width: 105px;
+        margin-left: 60px;
+    }
+    
+}
+
+@media(max-width: 400px) {
+    input{
+        width: 170px;
+    }
+
+    .register{
+        margin-left: 22px;
     }
 }

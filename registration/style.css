@@ -14,11 +14,37 @@
 	background-position: top; */
 }
 
+input {
+	border: none;
+}
+
 .container {
 	margin-top: 50px;
 }
 
- .datas {
+.who {
+	display: flex;
+	justify-content: center;
+}
+
+.member {
+	width: 45%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e0e0e0;
+	border-radius: 10px 10px 0 0;
+	box-shadow: inset 0 -7px 7px rgb(200, 200, 200);
+	cursor: pointer;
+}
+
+.clicked{
+	box-shadow: 0 -7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
+
+}
+
+.datas {
 	background: #e0e0e0;
 	border-radius: 10px;
 	box-shadow: 7px 7px 10px #828282, -7px -7px 10px #fff;
@@ -33,7 +59,7 @@
 }
 
 .register-form {
-	margin-top: 25px;
+	/* margin-top: 25px; */
 	padding: 30px;
 }
 

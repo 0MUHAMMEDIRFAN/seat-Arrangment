@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="main.css">
-        <title>Login Page</title>
-    </head>
-    <body>
-       <!--login form details-->
-        <form action="index.php" method = "post">
-            <!--logo for the page-->
-            <!-- <div class="img">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <title>Login Page</title>
+</head>
+
+<body>
+    <!--login form details-->
+    <form action="index.php" method="post">
+        <!--logo for the page-->
+        <!-- <div class="img">
                 <a href="index.html"><img src="https://res.cloudinary.com/walebant/image/upload/v1568755714/icon.svg" alt="logo"></a>
             </div> -->
+        <div class="form-container">
 
-            <div class="form-container">
-                <!--email with set input format -->
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required 
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/><br><br>
+            <h1 class="heading">LOGIN</h1>
+
+            <!--email with set input format -->
+            <input type="regno" class="form-control" id="regno" name="regno" placeholder="Register Number" required/><br><br>
 
 
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password" 
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                title="Must be at least 8 characters and contain at least one number, one uppercase and one lowercase letter" required >
-                <br><a href="forgot-password.html">Forgot password?</a>
-                <br><br>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must be at least 8 characters and contain at least one number, one uppercase and one lowercase letter"
+                required>
+            <br><a class="forgot" href="forgot-password.html">Forgot password?</a>
+            <br><br>
 
-                <button class="button" type="submit">LOG IN</button>
-                        
-            </div>
-            
-        </form>
+            <button class="button" type="submit">LOG IN</button>
+            <a class="reg-div" href="registration/registration.html">
+                <div class="button register">REGISTER</div>
+            </a>
 
-        <div class="other-details">
-            <a href="registration/registration.html">Don't have an account?</a>    
+        </div>
+
+    </form>
+
+    <!-- <div class="other-details">
+            <a href="registration/registration.html">Reg</a>    
                        
         </div>
-        
-    </body>
+         -->
+</body>
+
 </html>

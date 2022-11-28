@@ -6,8 +6,24 @@ const emailInput = document.querySelector('#email');
 const phone_number = document.querySelector('#number');
 const password_input = document.querySelector('#password');
 const message = document.querySelector('#msg');
+const student= document.querySelector("#student")
+const faculty= document.querySelector("#faculty")
 
+student.addEventListener("click" , changeStudent);
+faculty.addEventListener("click" , changeFaculty);
 myForm.addEventListener('submit', onSubmit);
+
+
+function changeFaculty(){
+    faculty.classList.add("clicked")
+    student.classList.remove("clicked")
+    
+}
+
+function changeStudent(){
+    faculty.classList.remove("clicked")
+    student.classList.add("clicked")
+}
 
 function onSubmit(e) {
     var errorr = [];
