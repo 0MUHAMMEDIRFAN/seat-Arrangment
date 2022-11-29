@@ -31,17 +31,20 @@
           </div>
           <form id="myForm" class="form-group" method="POST" action="">
             <input type="text" id="fullname" name="fullName" class="form-control" placeholder="Full name" minlength="4"
-              pattern="[A-Za-z]+" required>
-            <input type="text" id="idno" name="idno" class="form-control" placeholder="Id" minlength="6" maxlength="6">
+            pattern="[A-Za-z\s]+" 
+            title="Only Alphabets and space allowed" required>
+            <!-- pattern="[a-zA-Z0-9\s]+" -->
+            <input type="text" id="idno" name="idno" class="form-control" placeholder="Id" minlength="6" maxlength="10">
             <div class="row">
               <div class="col-sm-6">
                 <input type="text" id="regno" name="regno" class="form-control" placeholder="Register no" minlength="6"
-                  maxlength="6" required>
+                  maxlength="10" required>
 
               </div>
 
               <div class="col-sm-6">
-                <input type="date" id="dob" name="dob" class="form-control" placeholder="DOB" minlength="4" required>
+                <input type="text" id="dob" name="dob" class="form-control" placeholder="DOB"
+                  onfocus="(this.type='date')" onblur="(this.type='text')" minlength="4" required>
               </div>
 
             </div>
@@ -51,8 +54,8 @@
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               </div>
               <div class="col-sm-6">
-                <input type="tel" id="contact" name="contact" class="form-control" placeholder="Phone" pattern="^\d{10}$" maxlength="10"
-                  title="Please fill in correct phone number" required>
+                <input type="tel" id="contact" name="contact" class="form-control" placeholder="Phone"
+                  pattern="^\d{10}$" maxlength="10" title="Please fill in correct phone number" required>
               </div>
 
             </div>

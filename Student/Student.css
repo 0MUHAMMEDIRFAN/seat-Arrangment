@@ -94,7 +94,8 @@ h5 {
     /* width: 10%; */
     padding: 7px 30px;
     border-radius: 10px;
-    background: #7cb5ff;
+    /* background: #7cb5ff; */
+	background: linear-gradient(to bottom right, #68a9ff 0%, #7cb5ff 51%, #b0d2ff 100%);
     box-shadow: 0 7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
     margin: 20px;
     /* position: absolute; */

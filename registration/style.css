@@ -18,7 +18,7 @@ input {
 	border: none;
 }
 
-#idno{
+#idno {
 	display: none;
 }
 
@@ -43,7 +43,7 @@ input {
 	cursor: pointer;
 }
 
-.clicked{
+.clicked {
 	box-shadow: 0 -7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
 
 }
@@ -90,8 +90,9 @@ input {
 
 .form-group .btn-default {
 	border-radius: 2em;
-	background: #7cb5ff;
-	/* box-shadow: 3px 3px 5px #505050, -3px -3px 5px #000; */
+	/* background: #7cb5ff; */
+	background: linear-gradient(to bottom right, #68a9ff 0%, #7cb5ff 51%, #b0d2ff 100%);
+	box-shadow: 3px 3px 5px #505050, -3px -3px 5px #000;
 	width: 25vw;
 	border: none;
 	font-weight: 600;
@@ -100,12 +101,12 @@ input {
 	display: block;
 	margin: 30px auto 10px auto;
 	box-shadow: 0 7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
-
 }
 
 .form-group .btn-default:hover {
 	/* box-shadow: 0 8px 6px -6px ; */
-	background: #5189d3;
+	/* background: #5189d3; */
+	background: linear-gradient(to bottom right, #3e92ff 0%, #6cabff 51%, #98c5ff 100%);
 	color: #fff;
 
 	/* scale: 1.1%; */
