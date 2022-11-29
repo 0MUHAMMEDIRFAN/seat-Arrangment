@@ -18,6 +18,10 @@ input {
 	border: none;
 }
 
+#idno{
+	display: none;
+}
+
 .container {
 	margin-top: 50px;
 }

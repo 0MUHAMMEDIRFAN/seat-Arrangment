@@ -8,6 +8,9 @@ const password_input = document.querySelector('#password');
 const message = document.querySelector('#msg');
 const student= document.querySelector("#student")
 const faculty= document.querySelector("#faculty")
+const admno= document.querySelector("#admno")
+const idno= document.querySelector("#idno")
+const dob= document.querySelector("#dob")
 
 student.addEventListener("click" , changeStudent);
 faculty.addEventListener("click" , changeFaculty);
@@ -17,12 +20,23 @@ myForm.addEventListener('submit', onSubmit);
 function changeFaculty(){
     faculty.classList.add("clicked")
     student.classList.remove("clicked")
-    
+    admno.removeAttribute("required")
+    idno.setAttribute("required", "true")
+    dob.removeAttribute("required")
+    admno.style.display="none"
+    idno.style.display="block"
+    dob.style.display="none"
 }
 
 function changeStudent(){
     faculty.classList.remove("clicked")
+    idno.removeAttribute("required")
     student.classList.add("clicked")
+    admno.setAttribute("required", "true")
+    idno.style.display="none"
+    admno.style.display="block"
+    dob.setAttribute("required", "true")
+    dob.style.display="block"
 }
 
 function onSubmit(e) {
