@@ -8,9 +8,17 @@ const password_input = document.querySelector('#password');
 const message = document.querySelector('#msg');
 const student= document.querySelector("#student")
 const faculty= document.querySelector("#faculty")
-const admno= document.querySelector("#admno")
+const regno= document.querySelector("#regno")
 const idno= document.querySelector("#idno")
 const dob= document.querySelector("#dob")
+const fullname= document.querySelector("#fullname")
+const email= document.querySelector("#email")
+const contact= document.querySelector("#contact")
+const confirmPassword= document.querySelector("#confirmPassword")
+const createPassword= document.querySelector("#createPassword")
+
+
+
 
 student.addEventListener("click" , changeStudent);
 faculty.addEventListener("click" , changeFaculty);
@@ -20,23 +28,25 @@ myForm.addEventListener('submit', onSubmit);
 function changeFaculty(){
     faculty.classList.add("clicked")
     student.classList.remove("clicked")
-    admno.removeAttribute("required")
+    regno.removeAttribute("required")
     idno.setAttribute("required", "true")
     dob.removeAttribute("required")
-    admno.style.display="none"
+    regno.style.display="none"
     idno.style.display="block"
     dob.style.display="none"
+    clear();
 }
 
 function changeStudent(){
     faculty.classList.remove("clicked")
     idno.removeAttribute("required")
     student.classList.add("clicked")
-    admno.setAttribute("required", "true")
+    regno.setAttribute("required", "true")
     idno.style.display="none"
-    admno.style.display="block"
+    regno.style.display="block"
     dob.setAttribute("required", "true")
     dob.style.display="block"
+    clear();
 }
 
 function onSubmit(e) {
@@ -73,3 +83,13 @@ function onSubmit(e) {
     }
 }
     
+function clear(){
+    regno.value="";
+    idno.value="";
+    contact.value="";
+    email.value="";
+    fullname.value="";
+    dob.value="";
+    createPassword.value="";
+    confirmPassword.value="";
+}

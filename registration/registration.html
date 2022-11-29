@@ -30,19 +30,18 @@
             <div class="member " id="faculty">TUTOR</div>
           </div>
           <form id="myForm" class="form-group" method="POST" action="">
-            <input type="text" id="firstName" name="fName" class="form-control" placeholder="Full name" minlength="4"
+            <input type="text" id="fullname" name="fullName" class="form-control" placeholder="Full name" minlength="4"
               pattern="[A-Za-z]+" required>
             <input type="text" id="idno" name="idno" class="form-control" placeholder="Id" minlength="6" maxlength="6">
             <div class="row">
               <div class="col-sm-6">
-                <input type="text" id="admno" name="admno" class="form-control" placeholder="Adm no" minlength="6"
+                <input type="text" id="regno" name="regno" class="form-control" placeholder="Register no" minlength="6"
                   maxlength="6" required>
 
               </div>
 
               <div class="col-sm-6">
-                <input type="date" id="dob" name="dob" class="form-control" placeholder="DOB" minlength="4"
-                  data-date-format="DDMMYYYY" required>
+                <input type="date" id="dob" name="dob" class="form-control" placeholder="DOB" minlength="4" required>
               </div>
 
             </div>
@@ -52,7 +51,7 @@
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               </div>
               <div class="col-sm-6">
-                <input type="tel" name="contact" class="form-control" placeholder="Phone" pattern="^\d{10}$" maxlength="10"
+                <input type="tel" id="contact" name="contact" class="form-control" placeholder="Phone" pattern="^\d{10}$" maxlength="10"
                   title="Please fill in correct phone number" required>
               </div>
 
@@ -62,7 +61,7 @@
               title="Must be at least 8 characters and contain at least one number, one uppercase and one lowercase letter"
               required>
 
-            <input type="password" id="verifyPassword" name="password2" class="form-control"
+            <input type="password" id="confirmPassword" name="password2" class="form-control"
               placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               title="please enter same password as above" onchange="checkPassword();" required>
 
