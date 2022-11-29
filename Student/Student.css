@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #e0e0e0;
+}
+
+
+.study h2{
+    margin: 20px;
+}
+.study{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    margin: 30px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.head h1{
+    font-weight: 900;
+    /* font-size: xx-large; */
+}
+
+h3{
+    margin: 20px;
+}
+
+.details{
+    box-shadow: 7px 7px 10px #828282, -7px -7px 10px #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+h5{
+    box-shadow: inset 2px 2px 3px #828282, inset -2px -2px 3px #fff;
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+}
