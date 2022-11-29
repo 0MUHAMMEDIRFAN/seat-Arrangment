@@ -20,10 +20,12 @@ body {
     text-align: center;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .clicked {
-    background: #7cb5ff;
+    /* background: #7cb5ff; */
+    background: linear-gradient(to bottom right, #68a9ff 0%, #7cb5ff 51%, #b0d2ff 100%);
     box-shadow: 0 7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
 }
 
@@ -101,6 +103,11 @@ h5 {
     /* position: absolute; */
     right: 0;
     top: 0;
+    cursor: pointer;
+}
+
+.logout:hover{
+    background: linear-gradient(to bottom right, #3e92ff 0%, #6cabff 51%, #98c5ff 100%);
 }
 
 .align {
