@@ -1,111 +1,149 @@
-/* * {
-    margin: 0px
+* {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal; */
-    /* background-image: url("Background-img2.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover
+.body {
+	background-color: #e0e0e0;
+}
+
+input {
+	border: none;
+}
+
+#idno {
+	display: none;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+.who {
+	display: flex;
+	justify-content: center;
+}
+
+.member {
+	width: 45%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e0e0e0;
+	border-radius: 10px 10px 0 0;
+	box-shadow: inset 0 -7px 7px rgb(200, 200, 200);
+	cursor: pointer;
+}
+
+.clicked {
+	box-shadow: 0 -7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
+
+}
+
+.datas {
+	background: #e0e0e0;
+	border-radius: 10px;
+	box-shadow: 7px 7px 10px #828282, -7px -7px 10px #fff;
+	margin-inline: 25px;
+}
+
+.datas h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-weight: 900;
+
+}
+
+.register-form {
+	padding: 30px;
 }
 
 .logo {
-    margin-top: 35px;
-    margin-left: 35px;
-    text-transform: uppercase;
-    color: rgb(230, 0, 230);
-    font-size: 20px
+	margin-left: 2vw;
+	padding-top: 20px;
+	color: #A625D3;
+	font-weight: bold;
+	font-size: 14px;
 }
 
-.main {
-    margin-top: 40px;
-    margin-left: 300px;
-}
+.form-group .form-control {
+	border-radius: 1em;
+	margin-top: 10px;
+	font-size: 16px;
+	background: #e0e0e0;
+	box-shadow: inset 2px 2px 3px #828282, inset -2px -2px 3px #fff;
+	padding-left: 17px;
+	height: 45px;
 
-.main .header {
-    margin-left: 85px
-}
-
-.header p {
-    margin-top: 5px;
-    margin-left: 55px;
-    margin-bottom: 0px;
-    margin-right: 8px;
-    font-size: 15px
-}
-
-.form-div {
-    margin-top: 100px
-}
-
-.form-div input {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border: 1px solid rgb(230, 0, 230);
-    width: 230px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px
-}
-
-.form-div .long-width {
-    width: 518px
-}
-
-.paddin {
-    margin-left: 40px;
-}
-
-.form-div .submit-btn {
-    margin-top: 25px;
-    margin-left: 110px;
-    width: 290px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border: 1px solid rgb(230, 0, 230);
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-color: rgb(230, 0, 230);
-}
-
-.submit-btn {
-    cursor: pointer;
-}
-
-.info-div {
-    margin-top: 20px;
-    margin-left: 110px
-}
-
-a {
-    color: rgb(230, 0, 230)
-}
-
-.error {
-    background: orangered;
-    color: #fff;
-    margin-bottom: 15px;
-    width: 250px;
-    padding: 12px;
 
 }
 
-@media screen and (max-width: 800px) {
-    .main, .info-div, .header, .form-div {
-      width: 100%; The width is 100%, when the viewport is 800px or smaller
-    }
-  }
+.form-group .btn-default {
+	border-radius: 2em;
+	background: linear-gradient(to bottom right, #68a9ff 0%, #7cb5ff 51%, #b0d2ff 100%);
+	box-shadow: 3px 3px 5px #505050, -3px -3px 5px #000;
+	width: 25vw;
+	border: none;
+	font-weight: 600;
+	color: #fff;
+	padding: 5px;
+	display: block;
+	margin: 30px auto 10px auto;
+	box-shadow: 0 7px 7px rgb(200, 200, 200), 1px 0 7px rgb(220, 220, 220), -1px -1px 7px rgb(225, 225, 225);
+}
 
-@media only screen and (max-width:500px) {
-    For mobile phones:
-    .main, .info-div, .header, .form-div {
-      width: 100%;
-    }
-  } */
+.form-group .btn-default:hover {
+	background: linear-gradient(to bottom right, #3e92ff 0%, #6cabff 51%, #98c5ff 100%);
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.col-sm-6 p {
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.col-sm-6 p a {
+	color: blue;
+	font-weight: bold;
+}
+
+#other {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#other p {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#other a {
+	margin-top: 20px;
+	margin-left: 4px;
+	color: #7cb5ff;
+	text-decoration: none;
+}
+
+
+@media (min-width: 769px) {
+	#other p {
+		margin-left: 7vw;
+	}
+}
+
+@media (min-width: 788px) {
+	#other p {
+		margin-right: 5vw;
+	}
+}
+
+@media (min-width: 999px) {
+	#other p {
+		margin-right: -5vw;
+	}
+}
